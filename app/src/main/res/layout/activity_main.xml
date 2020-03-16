@@ -44,7 +44,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="한줄 자기 소개"/>
+        android:text="한줄 자기 소개 ㅎㅎ"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -52,6 +52,18 @@
         android:singleLine="true"
         android:imeOptions="actionSearch"
         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="최대 세줄 자기소개"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="3"/>
+
+
 
 
 
