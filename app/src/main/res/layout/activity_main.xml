@@ -4,13 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
     android:orientation="vertical"
 
      tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/up" />
+
+    </LinearLayout>
+
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:text="아이디"/>
 
     <EditText
@@ -18,7 +38,10 @@
         android:layout_height="wrap_content"
         android:hint="아이디를 적거라 ㅎㅎ"/>
 
+
+
     <TextView
+        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="비밀번호"/>
@@ -29,49 +52,29 @@
         android:hint="비밀번호 적으셈 ㅎㅎ"
         android:inputType="textPassword"/>
 
-    <TextView
+
+    <CheckBox
+        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="전화번호"/>
-
-    <EditText
+        android:checked="true"
+        android:text="자동로그인"/>
+    <Button
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="전화번호 ㅎㅎ"
-        android:inputType="phone"/>
+        android:text="로그인"/>
 
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="한줄 자기 소개 ㅎㅎ"/>
-
-    <EditText
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:singleLine="true"
-        android:imeOptions="actionSearch"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="최대 세줄 자기소개"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:maxLines="3"/>
+        android:orientation="vertical">
 
 
 
 
 
-
-
-
-
-
+    </LinearLayout>
 
 
 
